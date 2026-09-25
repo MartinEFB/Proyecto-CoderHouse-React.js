@@ -125,4 +125,4 @@ Los valores se obtienen desde la configuración del proyecto en la [consola de F
 
 ## Autor
 
-Proyecto desarrollado como entrega final del curso de React.js de CoderHouse.
+Proyecto desarrollado como entrega final del curso de React.js de CoderHouse, por el alumno Martin Emanuel Flores Bravo, Comision: 93445.
