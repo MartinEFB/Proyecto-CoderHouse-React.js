@@ -3,7 +3,6 @@ import { CartContext } from "./CartContext";
 
 const STORAGE_KEY = "cart";
 
-// Lee el carrito guardado al iniciar la app (si existe y es válido)
 const loadCartFromStorage = () => {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
@@ -17,7 +16,6 @@ const loadCartFromStorage = () => {
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(loadCartFromStorage);
 
-  // Cada vez que cambia el carrito, lo persistimos en localStorage
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
